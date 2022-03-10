@@ -1,0 +1,356 @@
+body{
+    background-color: #FAFAFA;
+    font-family: 'Roboto', sans-serif;
+}
+
+strong, b{
+    font-weight: 700;
+}
+
+
+.headerr{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 54px;
+    background: #FFFFFF;
+    position: fixed;
+    top:0;left:0;
+    border-bottom: 1px solid #DBDBDB; 
+}
+.topo{
+    
+    width: 935px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+.logo{
+    
+    width: 145px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+.logo img,
+.logo hr{
+    align-self: center;
+}
+hr{
+    border: none;
+    width: 1px;
+    height: 22px;
+    background-color: #DBDBDB;
+}
+.buscar{
+    margin:auto 0;
+}
+.caixa-busca{
+    background-color: #FAFAFA;
+    width: 215px;
+    height: 28px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    font-size: 12px;
+}
+.icons{
+    width: 160px;
+    height: 54px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;  
+}
+
+.conteudos{
+    width: 935px;
+    height: 800px; 
+    display: flex;
+    margin: 0 auto;
+    /* background-color: #E5E5E5; */
+    margin-top: 88px;
+}
+.conteudo-esquerda{
+    width: 614px;
+}
+.stories{
+    width: 614px;
+    height: 118px; 
+    border: 1px solid #dbdbdb;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    border-radius: 3px;
+    overflow: hidden;
+    font-size: 12px;
+    position:relative;
+    z-index: -1;
+    
+}
+.setinha{
+    position:absolute;
+    right: 9px;
+    color: #FFFFFF;
+    font-size: 26px;
+}
+
+.story{
+    width: 78px;
+    margin-left: 3.4px;
+    text-align: center;
+
+}
+
+.story img{
+    width: 58px;
+    height: 58px;
+    padding: 2px;
+    border: 2px solid;
+    border-image-source: url(./img/stories_background1.png);
+    border-image-width: 100%;
+    border-image-slice: 33;
+    /* border-radius: 50%; */
+}
+
+.story p{
+    text-align: center;
+    margin-top:0;
+    width: 78px;
+    overflow: hidden;
+
+}
+.postagens{
+    height: 1000px;
+    margin-top: 24px;
+}
+
+.post{
+    height: 749px;
+    width: 614px;
+    border: 1px solid #DBDBDB;
+    background-color: #FFFFFF;
+    position: relative;
+    border-radius: 3px;
+    margin-bottom: 60px;
+    z-index: -1;
+}
+.topo-post{
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.autor{
+    display: flex;
+    align-items: center;
+    padding: 14px 4px 14px 16px;
+    height: 35px;
+}
+.autor-nome{
+    margin-left: 15px;
+    font-weight: 500;
+}
+.autor-img img{
+    height: 32px;
+    width: 32px;
+}
+.plus{
+    padding: 8px;
+    margin-right: 10px;
+    z-index: -1;
+}
+.img-post{
+    width: 612px;
+    height: 612px;
+    overflow: hidden;
+}
+.img-post img{
+    width: 100%;
+    height: 100%;
+    }
+
+.info-post{
+    height: 76px;
+}
+.botoes-post{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    font-size: 23px;
+}
+
+.b-esquerda ion-icon{
+    margin-right: 5px;
+}
+
+.curtidas{
+    display: flex;
+    margin-left: 5px;
+    padding-left: 10px;
+    align-items: center;
+}
+.curtidas p{
+    margin-left: 8px;
+}
+.curtida-logo img{
+    height: 20px;
+    width: 20px;
+}
+.conteudo-direita{
+    height: 100%;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+.foto-nick{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.nick{
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+.nick p:first-child{
+    font-weight: 500;
+    
+}
+.nick p:nth-child(2){
+    font-weight: 300;
+    color: #8E8E8E;
+    margin-top: 5px;
+}
+.sugestoes-titulo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.para-seguir{
+    margin-top: 4px;
+    
+}
+.sugestoes-titulo p:first-child{
+    color: #8E8E8E;
+}
+.para-seguir>.perfil-usuario>.foto-nick{
+    margin-top: 0px;
+}
+
+.para-seguir>.perfil-usuario>.foto-nick>.nick{
+    margin-top: 8px;
+}
+
+.para-seguir>.perfil-usuario>.foto-nick>.nick p:last-child{
+    font-weight: 400;
+    
+}
+.perfil-usuario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.seguir-perfil{
+    font-weight: 500;
+    color: #139ef2;
+    margin-top: 10px;
+}
+ .conteudo-direita .sugestoes img{
+     height: 32px;
+     width: 32px;
+     margin-top: 5px;
+ }
+ .para-seguir .foto{
+     margin-top: 0;
+ }
+
+ .legal{
+     margin-top: 33px;
+     width: 300px;
+     margin-left:-7px;
+ }
+ .legal, .legal a{
+color:#C7C7C7;
+font-weight: 400;
+font-size: 11px;
+
+ }
+ .legal p:last-child{
+     margin-top: 18px;
+ }
+.barra-android{
+    display:none;
+}
+ 
+
+ @media (max-width: 935px) {
+    .conteudo-direita{
+        display: none;
+    }
+
+    .conteudos{
+        justify-content: center;
+        width: 610px;
+    }
+    .conteudo-esquerda{
+        width: 610px;
+        justify-content: center;
+    }
+    .topo{
+        margin: 0 18px;
+    }
+ }
+ @media (max-width: 614px) {
+     hr, .caixa-busca, .icons ion-icon:nth-child(2),.icons ion-icon:nth-child(3),.icons ion-icon:nth-child(4){
+         display:none;
+     }
+     .logo{
+         width: 60%;
+     }
+
+     .icons{
+         width: 30px;
+         flex-direction: row-reverse;
+     }
+     .conteudos{
+        margin-top: 54px;
+    }   
+    .stories{
+        border: none;
+    }
+    
+    .setinha{
+        display:none;
+    }
+    .postagens{
+        margin-top:0;
+    }
+    .barra-android{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 54px;
+        background: #FFFFFF;
+        position: fixed;
+        bottom:0;left:0;
+        border-bottom: 1px solid #DBDBDB; 
+     }
+     .icons-android{
+        width: 100%;
+        height: 54px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 25px;
+        margin: 0 20px;
+     }
+    
+ }
+
