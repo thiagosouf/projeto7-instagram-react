@@ -1,20 +1,21 @@
 import Story from "./Story"
+import Post from "./Post"
 
-export default function Corpo(){
+export default function Corpo() {
     return (
 
         <div class="corpo">
             <div class="esquerda">
                 <div class="stories">
 
-                    <Story src="assets/img/9gag.svg" usuario="9gag"/>
-                    <Story src="assets/img/meowed.svg" usuario="meowed"/>
-                    <Story src="assets/img/barked.svg" usuario="barked"/>
-                    <Story src="assets/img/nathanwpylestrangeplanet.svg" usuario="nathanwpylestrangeplanet"/>
-                    <Story src="assets/img/wawawicomics.svg" usuario="wawawicomics"/>
-                    <Story src="assets/img/respondeai.svg" usuario="respondeai"/>
-                    <Story src="assets/img/filomoderna.svg" usuario="filomoderna"/>
-                    <Story src="assets/img/memeriagourmet.svg" usuario="memeriagourmet"/>
+                    <Story src="assets/img/9gag.svg" usuario="9gag" />
+                    <Story src="assets/img/meowed.svg" usuario="meowed" />
+                    <Story src="assets/img/barked.svg" usuario="barked" />
+                    <Story src="assets/img/nathanwpylestrangeplanet.svg" usuario="nathanwpylestrangeplanet" />
+                    <Story src="assets/img/wawawicomics.svg" usuario="wawawicomics" />
+                    <Story src="assets/img/respondeai.svg" usuario="respondeai" />
+                    <Story src="assets/img/filomoderna.svg" usuario="filomoderna" />
+                    <Story src="assets/img/memeriagourmet.svg" usuario="memeriagourmet" />
 
                     <div class="setinha">
                         <ion-icon name="chevron-forward-circle"></ion-icon>
@@ -22,77 +23,8 @@ export default function Corpo(){
                 </div>
 
                 <div class="posts">
-                    <div class="post">
-                        <div class="topo">
-                            <div class="usuario">
-                                <img src="assets/img/meowed.svg" />
-                                meowed
-                            </div>
-                            <div class="acoes">
-                                <ion-icon name="ellipsis-horizontal"></ion-icon>
-                            </div>
-                        </div>
-
-                        <div class="conteudo">
-                            <img src="assets/img/gato-telefone.svg" />
-                        </div>
-
-                        <div class="fundo">
-                            <div class="acoes">
-                                <div>
-                                    <ion-icon name="heart-outline"></ion-icon>
-                                    <ion-icon name="chatbubble-outline"></ion-icon>
-                                    <ion-icon name="paper-plane-outline"></ion-icon>
-                                </div>
-                                <div>
-                                    <ion-icon name="bookmark-outline"></ion-icon>
-                                </div>
-                            </div>
-
-                            <div class="curtidas">
-                                <img src="assets/img/respondeai.svg" />
-                                <div class="texto">
-                                    Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="post">
-                        <div class="topo">
-                            <div class="usuario">
-                                <img src="assets/img/barked.svg" />
-                                barked
-                            </div>
-                            <div class="acoes">
-                                <ion-icon name="ellipsis-horizontal"></ion-icon>
-                            </div>
-                        </div>
-
-                        <div class="conteudo">
-                            <img src="assets/img/dog.svg" />
-                        </div>
-
-                        <div class="fundo">
-                            <div class="acoes">
-                                <div>
-                                    <ion-icon name="heart-outline"></ion-icon>
-                                    <ion-icon name="chatbubble-outline"></ion-icon>
-                                    <ion-icon name="paper-plane-outline"></ion-icon>
-                                </div>
-                                <div>
-                                    <ion-icon name="bookmark-outline"></ion-icon>
-                                </div>
-                            </div>
-
-                            <div class="curtidas">
-                                <img src="assets/img/adorable_animals.svg" />
-                                <div class="texto">
-                                    Curtido por <strong>adorable_animals</strong> e <strong>outras 99.159 pessoas</strong>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <Post src="assets/img/meowed.svg" usuario="meowed" conteudo="assets/img/gato-telefone.svg" curtidaImg="assets/img/respondeai.svg" curtidaNome="respondeai" curtidaQnt="101.523" />
+                    <Post src="assets/img/barked.svg" usuario="barked" conteudo="assets/img/dog.svg" curtidaImg="assets/img/adorable_animals.svg" curtidaNome="adorable_animals" curtidaQnt="99.159" />
                 </div>
             </div>
 
@@ -110,7 +42,7 @@ export default function Corpo(){
                         Sugestões para você
                         <div>Ver tudo</div>
                     </div>
-
+                    {/* <Sugestao /> */}
                     <div class="sugestao">
                         <div class="usuario">
                             <img src="assets/img/bad.vibes.memes.svg" />
